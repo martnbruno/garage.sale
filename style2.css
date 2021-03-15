@@ -1,0 +1,304 @@
+body, html	{
+	width: 100%;
+  	height: 100%;
+  	font-family: 'Shadows Into Light', cursive, sans-serif;
+	background-image: url("img/bg4.jpg"); 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;			
+}
+
+/* HEAD */
+.heading1 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+
+h1 {
+	border: 5px solid #ffff ;
+	text-align: center;
+	color: #ffff ;
+	box-shadow: 10px 5px 20px 5px ;	
+	font-size: 5em;
+	line-height: 200px;
+	width: 80%;
+	font-weight: bold;	
+
+}
+
+
+/* TARJETAS/FOTOS */
+.pictures {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;	
+}
+
+img {
+	width:500px;
+	height:400px;
+	margin: 0px;
+	transition: 1s;	
+	padding:30px; 	
+	border-radius: 50px;
+}
+
+img:hover {
+	transform: scale(1.1);
+}
+
+
+/* .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 4%;
+    color: #fff;
+    text-align: center;
+    opacity: -0.5;
+    transition: opacity .15s;
+} */
+
+
+.carousel.pointer-event {
+    
+    touch-action: pan-y;
+    width: 51vh;
+}
+
+/* .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+} */
+
+/* Letras de fotos */
+.h5, h5 {
+    font-size: 1.30rem;
+    font-weight: bold;
+	text-align: center;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 22px;
+    text-align: center;
+    color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.3em;
+}
+
+
+/* BOTON DE MENSAJE */
+
+.buffer {
+	height: 5rem;
+}
+
+.btn {
+	font-weight: bold;
+	/*Esto hace que el texto del boton este en mayusculas*/
+	text-transform: uppercase;
+	font-size: 25px; 
+	margin-top: 10px;
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 10px;
+	left: 33em;
+}
+
+.btn-primary {
+    background-color: #0e0e0e;
+    border-color: #313441;
+    width: 262px;
+    height: 70px;
+}
+
+.btn-primary:hover {
+
+	background-color: #ee4b08;
+	border-color: #ee4b08;
+	/*Esto hace que aumente el tamaño del boton al hacer hover, lo cual le da un efecto*/
+	border-width: 4px;
+}
+
+.btn-xl {
+	/*El padding es el espacio que hay entre el texto y el borde interior, que no es lo mismo que el margen (ver box model).*/
+	padding: 0;
+}
+
+
+/* MEDIA QUERIES */	
+
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {	
+
+	h1{
+		font-size: 2em;
+		line-height: 100px;
+		width: 80%;
+		padding: 1px;
+	}
+
+	h5 {
+		font-size: 1.2em;
+	}
+
+	.btn {
+		position: fixed;
+		left: 5em;
+		font-size: 1em;
+		width: 11em;
+		padding: 1.2px;
+	}
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+	h1 {
+		font-size: 2.5em;
+		width: 95%;
+	}
+	.btn {
+		position: fixed;
+		left: 7em;
+	}
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+	.btn {
+		position: fixed;
+    	left: 6em;
+    	width: 13em;
+	}
+
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+	.btn {
+		position: fixed;
+		left: 7em;
+	}
+
+
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+	
+	h5 {
+		font-size: 1.5em;
+	}
+	p {
+		font-size: 1.5em;
+	}
+
+	.btn {
+		position: fixed;
+		left: 9em;
+		font-size: 1.7em;
+		width: 11em;
+	}
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+	
+
+	.btn {
+		position: fixed;
+		left: 13em;
+		font-size: 1.7em;
+		width: 11em;
+	}
+
+
+}
+
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	
+	body {
+		font-size: 1.5em;
+
+	}
+
+	h1 {
+		width: 95%;
+		line-height: 2em;
+	}
+
+	.btn {
+		position: fixed;
+		left: 9em;
+		font-size: 1.4em;
+		width: 12em;
+		height: 4em;
+	}
+
+}
