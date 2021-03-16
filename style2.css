@@ -50,7 +50,7 @@ img:hover {
 }
 
 
-/* .carousel-control-next, .carousel-control-prev {
+.carousel-control-next, .carousel-control-prev {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -66,13 +66,14 @@ img:hover {
     text-align: center;
     opacity: -0.5;
     transition: opacity .15s;
-} */
+}
 
 
 .carousel.pointer-event {
     
     touch-action: pan-y;
-    width: 51vh;
+    width: 60vh; 
+	
 }
 
 /* .carousel-caption {
@@ -170,6 +171,11 @@ p {
 		font-size: 1.2em;
 	}
 
+	p {
+		font-size: 0.9em;
+
+	}
+
 	.btn {
 		position: fixed;
 		left: 5em;
@@ -205,6 +211,11 @@ p {
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+	
+	h5 {
+		font-size: 1.2em;
+	}
+
 	.btn {
 		position: fixed;
     	left: 6em;
